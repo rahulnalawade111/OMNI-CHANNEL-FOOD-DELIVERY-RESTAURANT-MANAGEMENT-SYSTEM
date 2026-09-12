@@ -1,0 +1,1 @@
+package com.restaurantmanagement.service; import com.restaurantmanagement.dto.*; import com.restaurantmanagement.entity.OrderStatus; import java.util.*; public interface OrderService { OrderResponse create(OrderRequest request); List<OrderResponse> list(); OrderResponse transition(Long id, OrderStatus status); }

@@ -1,0 +1,1 @@
+package com.restaurantmanagement.dto; import java.math.BigDecimal; import java.time.LocalDateTime; public record OrderResponse(Long id,String externalOrderId,String platform,String customerName,BigDecimal total,String status,LocalDateTime createdAt) {}

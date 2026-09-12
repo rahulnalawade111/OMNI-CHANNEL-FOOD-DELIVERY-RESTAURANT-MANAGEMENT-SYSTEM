@@ -1,0 +1,1 @@
+package com.restaurantmanagement.repository; import com.restaurantmanagement.entity.CustomerOrder; import java.util.*; import org.springframework.data.jpa.repository.JpaRepository; public interface OrderRepository extends JpaRepository<CustomerOrder,Long> { Optional<CustomerOrder> findByIdempotencyKey(String key); }
