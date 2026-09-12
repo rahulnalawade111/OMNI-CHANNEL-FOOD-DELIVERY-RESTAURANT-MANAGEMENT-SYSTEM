@@ -1,0 +1,1 @@
+package com.restaurantmanagement.dto; import jakarta.validation.constraints.*; import java.math.BigDecimal; public record OrderRequest(@NotBlank String externalOrderId, @NotBlank String platform, @NotNull Long restaurantId, @NotBlank String customerName, @NotNull @DecimalMin("0.01") BigDecimal total, @NotBlank String idempotencyKey) {}
